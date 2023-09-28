@@ -25,6 +25,12 @@ body{
     max-width: 1000px;
 }
 
+.clearfix::after {
+    display:block;
+    content: "";
+    clear: both;
+}
+
 /* 
 *********
 Header 
@@ -34,15 +40,53 @@ Header
 
 header{
     text-align: center;
+    margin: 30px;
+
 }
 
 div > h1 {
     color: #e53170;
-    margin: 30px;
+    margin-bottom: 30px;
 }
+
+
 
 /* 
 *********
 Main 
 *********
 */
+
+.team > .col {
+    width: calc(100% / 3 - 20px);
+    color: white;
+    float: left;
+    padding: 0px;
+    background-color: #0f0e17;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+img{
+    width: 100px;
+    display: block;
+}
+
+.person{
+    float: left;
+}
+
+.info{
+    float: right;
+    width: calc(100% - 100px);
+}
+
+span{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: block;
+}
+
+.email{
+    color: #17ccf2
+}
