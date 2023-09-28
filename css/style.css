@@ -20,11 +20,26 @@ body{
     font-family: 'Fredoka', sans-serif;
 }
 
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
 /* 
 *********
 Header 
 *********
 */
+
+
+header{
+    text-align: center;
+}
+
+div > h1 {
+    color: #e53170;
+    margin: 30px;
+}
 
 /* 
 *********
